@@ -61,14 +61,14 @@ async function handleSubmit(): Promise<void> {
       <template #actions>
         <div class="hidden items-center gap-2 md:flex">
           <RouterLink
-            class="inline-flex items-center gap-1 rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] px-3 py-2 text-sm font-medium text-[var(--color-text-main)] transition-colors hover:bg-[var(--color-bg-soft)]"
+            class="inline-flex items-center gap-1 rounded-lg border border-(--color-border) bg-[var(--color-surface)] px-3 py-2 text-sm font-medium text-[var(--color-text-main)] transition-colors hover:bg-[var(--color-bg-soft)]"
             :to="{ name: 'dashboard' }"
           >
             <span class="material-symbols-outlined text-[18px]">dashboard</span>
             Ir al Dashboard
           </RouterLink>
           <RouterLink
-            class="inline-flex items-center gap-1 rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] px-3 py-2 text-sm font-medium text-[var(--color-text-main)] transition-colors hover:bg-[var(--color-bg-soft)]"
+            class="inline-flex items-center gap-1 rounded-lg border border-(--color-border) bg-[var(--color-surface)] px-3 py-2 text-sm font-medium text-[var(--color-text-main)] transition-colors hover:bg-[var(--color-bg-soft)]"
             :to="{ name: 'academic-requests' }"
           >
             <span class="material-symbols-outlined text-[18px]">description</span>
@@ -94,7 +94,7 @@ async function handleSubmit(): Promise<void> {
           Gestiona emisión, firma institucional y verificación de credenciales académicas con trazabilidad criptográfica en tiempo real.
         </p>
 
-        <figure class="overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-sm">
+        <figure class="overflow-hidden rounded-xl border border-(--color-border) bg-[var(--color-surface)] p-5 shadow-sm">
           <img
             src="../../../assets/images/LogoITCA.png"
             alt="Logo oficial ITCA-FEPADE"
@@ -107,12 +107,12 @@ async function handleSubmit(): Promise<void> {
         </figure>
 
         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-          <article class="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-4 shadow-sm">
+          <article class="rounded-xl border border-(--color-border) bg-[var(--color-surface)] p-4 shadow-sm">
             <p class="text-3xl font-black text-[var(--color-primary)]">1,248</p>
             <p class="mt-1 text-sm font-medium text-[var(--color-text-muted)]">Certificaciones emitidas</p>
           </article>
 
-          <article class="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-4 shadow-sm">
+          <article class="rounded-xl border border-(--color-border) bg-[var(--color-surface)] p-4 shadow-sm">
             <p class="text-3xl font-black">99.98%</p>
             <p class="mt-1 text-sm font-medium text-[var(--color-text-muted)]">Integridad validada</p>
           </article>
@@ -120,7 +120,7 @@ async function handleSubmit(): Promise<void> {
       </section>
 
       <section class="lg:col-span-6">
-        <div class="rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6 shadow-sm md:p-8">
+        <div class="rounded-2xl border border-(--color-border) bg-[var(--color-surface)] p-6 shadow-sm md:p-8">
           <header class="mb-6">
             <h3 class="text-2xl font-bold tracking-tight">Iniciar sesión</h3>
             <p class="mt-1 text-sm text-[var(--color-text-muted)]">Usa tus credenciales institucionales para continuar.</p>
@@ -133,7 +133,7 @@ async function handleSubmit(): Promise<void> {
                 type="email"
                 autocomplete="email"
                 placeholder="admin@itca.edu.sv"
-                class="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] py-3 pl-10 pr-4 text-sm placeholder:text-[var(--color-text-muted)]/70 focus:border-[var(--color-primary)] focus:outline-none"
+                class="w-full rounded-lg border border-(--color-border) bg-[var(--color-bg)] py-3 pl-10 pr-4 text-sm placeholder:text-[var(--color-text-muted)]/70 focus:border-(--color-primary) focus:outline-none"
                 required
               />
             </IconField>
@@ -144,7 +144,7 @@ async function handleSubmit(): Promise<void> {
                 type="password"
                 autocomplete="current-password"
                 placeholder="••••••••"
-                class="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] py-3 pl-10 pr-4 text-sm placeholder:text-[var(--color-text-muted)]/70 focus:border-[var(--color-primary)] focus:outline-none"
+                class="w-full rounded-lg border border-(--color-border) bg-[var(--color-bg)] py-3 pl-10 pr-4 text-sm placeholder:text-[var(--color-text-muted)]/70 focus:border-(--color-primary) focus:outline-none"
                 required
               />
             </IconField>
@@ -154,7 +154,7 @@ async function handleSubmit(): Promise<void> {
                 <input
                   v-model="keepSession"
                   type="checkbox"
-                  class="h-4 w-4 rounded border-[var(--color-border)] text-[var(--color-primary)] focus:ring-[var(--color-primary)]"
+                  class="h-4 w-4 rounded border-(--color-border) text-[var(--color-primary)] focus:ring-[var(--color-primary)]"
                 />
                 Mantener sesión activa
               </label>
@@ -170,7 +170,7 @@ async function handleSubmit(): Promise<void> {
             </AppButton>
           </form>
 
-          <footer class="mt-6 border-t border-[var(--color-border-strong)] pt-5">
+          <footer class="mt-6 border-t border-(--color-border-strong) pt-5">
             <p class="text-xs text-[var(--color-text-muted)]">
               Al continuar aceptas los lineamientos de seguridad institucional y trazabilidad de certificados.
             </p>

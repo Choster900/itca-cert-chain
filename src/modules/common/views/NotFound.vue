@@ -17,7 +17,7 @@ import AppTopbar from '../components/AppTopbar.vue'
     </AppTopbar>
 
     <main class="mx-auto grid min-h-[calc(100vh-76px)] w-full max-w-[1280px] place-items-center px-4 py-10 md:px-6">
-      <section class="w-full max-w-2xl rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-8 text-center shadow-sm md:p-12">
+      <section class="w-full max-w-2xl rounded-2xl border border-(--color-border) bg-[var(--color-surface)] p-8 text-center shadow-sm md:p-12">
         <div class="mx-auto mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-[var(--color-primary)]/10 text-[var(--color-primary)]">
           <span class="material-symbols-outlined text-4xl">error</span>
         </div>

@@ -17,7 +17,7 @@ function handleToggleTheme(): void {
 <template>
   <button
     type="button"
-    class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] text-[var(--color-text-main)] transition-colors hover:bg-[var(--color-bg-soft)]"
+    class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-(--color-border) bg-[var(--color-surface)] text-[var(--color-text-main)] transition-colors hover:bg-[var(--color-bg-soft)]"
     :aria-label="currentTheme === 'dark' ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'"
     @click="handleToggleTheme"
   >

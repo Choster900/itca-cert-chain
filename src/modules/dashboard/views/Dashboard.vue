@@ -107,7 +107,7 @@ const activityItems = computed(() =>
         <div class="space-y-6 lg:col-span-8">
           <AppCard title="Carga de Documento" icon="upload_file">
             <div
-              class="group cursor-pointer rounded-xl border-2 border-dashed border-[var(--color-border)] bg-[var(--color-bg)] p-8 text-center transition-all hover:border-[var(--color-primary)]/40 hover:bg-[var(--color-bg-soft)] md:p-10"
+              class="group cursor-pointer rounded-xl border-2 border-dashed border-(--color-border) bg-[var(--color-bg)] p-8 text-center transition-all hover:border-(--color-primary)/40 hover:bg-[var(--color-bg-soft)] md:p-10"
             >
               <div
                 class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[var(--color-primary)]/10 text-[var(--color-primary)] transition-transform duration-300 group-hover:scale-110"
@@ -117,14 +117,14 @@ const activityItems = computed(() =>
               <p class="mb-1 text-lg font-semibold">Arrastre y suelte el registro académico (PDF)</p>
               <p class="mb-6 text-sm text-[var(--color-text-muted)]">o haga clic para buscar en su computadora</p>
               <div
-                class="inline-flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-[var(--color-surface)] px-3 py-1.5 text-xs text-[var(--color-text-muted)]"
+                class="inline-flex items-center gap-2 rounded-full border border-(--color-border) bg-[var(--color-surface)] px-3 py-1.5 text-xs text-[var(--color-text-muted)]"
               >
                 <span class="material-symbols-outlined text-[16px]">info</span>
                 Soportado: PDF, JPG, PNG (Max 10MB)
               </div>
             </div>
 
-            <div class="mt-6 border-t border-[var(--color-border-strong)] pt-4">
+            <div class="mt-6 border-t border-(--color-border-strong) pt-4">
               <label class="mb-2 flex items-center gap-2 text-sm font-semibold">
                 <span class="material-symbols-outlined text-[18px] text-[var(--color-secondary)]">fingerprint</span>
                 Hash SHA-256 Generado
@@ -134,7 +134,7 @@ const activityItems = computed(() =>
                   readonly
                   type="text"
                   value="e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-                  class="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-soft)] py-2.5 pl-4 pr-10 font-mono text-xs text-[var(--color-text-muted)]"
+                  class="w-full rounded-lg border border-(--color-border) bg-[var(--color-bg-soft)] py-2.5 pl-4 pr-10 font-mono text-xs text-[var(--color-text-muted)]"
                 />
                 <button
                   type="button"
@@ -155,7 +155,7 @@ const activityItems = computed(() =>
                 <input
                   type="text"
                   placeholder="Ej. Juan Pérez"
-                  class="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] py-3 pl-10 pr-4 text-sm text-[var(--color-text-main)] placeholder:text-[var(--color-text-muted)]/70 focus:border-[var(--color-primary)] focus:outline-none"
+                  class="w-full rounded-lg border border-(--color-border) bg-[var(--color-bg)] py-3 pl-10 pr-4 text-sm text-[var(--color-text-main)] placeholder:text-[var(--color-text-muted)]/70 focus:border-(--color-primary) focus:outline-none"
                 />
               </IconField>
 
@@ -163,14 +163,14 @@ const activityItems = computed(() =>
                 <input
                   type="text"
                   placeholder="Ej. 2023-00567"
-                  class="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] py-3 pl-10 pr-4 text-sm text-[var(--color-text-main)] placeholder:text-[var(--color-text-muted)]/70 focus:border-[var(--color-primary)] focus:outline-none"
+                  class="w-full rounded-lg border border-(--color-border) bg-[var(--color-bg)] py-3 pl-10 pr-4 text-sm text-[var(--color-text-main)] placeholder:text-[var(--color-text-muted)]/70 focus:border-(--color-primary) focus:outline-none"
                 />
               </IconField>
 
               <div class="md:col-span-2">
                 <IconField label="Carrera" icon="school">
                   <select
-                    class="w-full cursor-pointer appearance-none rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] py-3 pl-10 pr-10 text-sm text-[var(--color-text-main)] focus:border-[var(--color-primary)] focus:outline-none"
+                    class="w-full cursor-pointer appearance-none rounded-lg border border-(--color-border) bg-[var(--color-bg)] py-3 pl-10 pr-10 text-sm text-[var(--color-text-main)] focus:border-(--color-primary) focus:outline-none"
                   >
                     <option selected disabled>Seleccione una carrera...</option>
                     <option>Técnico en Ingeniería de Software</option>
@@ -188,7 +188,7 @@ const activityItems = computed(() =>
 
               <IconField label="Tipo de Título" icon="workspace_premium">
                 <select
-                  class="w-full cursor-pointer appearance-none rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] py-3 pl-10 pr-10 text-sm text-[var(--color-text-main)] focus:border-[var(--color-primary)] focus:outline-none"
+                  class="w-full cursor-pointer appearance-none rounded-lg border border-(--color-border) bg-[var(--color-bg)] py-3 pl-10 pr-10 text-sm text-[var(--color-text-main)] focus:border-(--color-primary) focus:outline-none"
                 >
                   <option>Técnico Superior</option>
                   <option>Diplomado</option>
@@ -204,7 +204,7 @@ const activityItems = computed(() =>
               <IconField label="Fecha de Emisión" icon="calendar_today">
                 <input
                   type="date"
-                  class="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] py-3 pl-10 pr-4 text-sm text-[var(--color-text-main)] focus:border-[var(--color-primary)] focus:outline-none"
+                  class="w-full rounded-lg border border-(--color-border) bg-[var(--color-bg)] py-3 pl-10 pr-4 text-sm text-[var(--color-text-main)] focus:border-(--color-primary) focus:outline-none"
                 />
               </IconField>
             </div>
@@ -215,11 +215,11 @@ const activityItems = computed(() =>
               <article
                 v-for="item in signatures"
                 :key="item.title"
-                class="flex flex-col justify-between gap-4 rounded-lg border border-[var(--color-border-strong)] bg-[var(--color-bg)] p-4 sm:flex-row sm:items-center"
+                class="flex flex-col justify-between gap-4 rounded-lg border border-(--color-border-strong) bg-[var(--color-bg)] p-4 sm:flex-row sm:items-center"
               >
                 <div class="flex items-center gap-3">
                   <div
-                    class="flex h-10 w-10 items-center justify-center rounded-full border border-[var(--color-border)] bg-[var(--color-surface)] text-[var(--color-text-muted)]"
+                    class="flex h-10 w-10 items-center justify-center rounded-full border border-(--color-border) bg-[var(--color-surface)] text-[var(--color-text-muted)]"
                   >
                     <span class="material-symbols-outlined text-[20px]">{{ item.icon }}</span>
                   </div>
@@ -303,9 +303,9 @@ const activityItems = computed(() =>
         </div>
 
         <aside class="space-y-6 lg:col-span-4">
-          <section class="overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] shadow-sm">
+          <section class="overflow-hidden rounded-xl border border-(--color-border) bg-[var(--color-surface)] shadow-sm">
             <div
-              class="flex items-center justify-between border-b border-[var(--color-border-strong)] bg-[var(--color-surface-muted)] px-5 py-4"
+              class="flex items-center justify-between border-b border-(--color-border-strong) bg-[var(--color-surface-muted)] px-5 py-4"
             >
               <h3 class="flex items-center gap-2 text-lg font-bold">
                 <span class="material-symbols-outlined text-[var(--color-primary)]">receipt_long</span>
@@ -330,7 +330,7 @@ const activityItems = computed(() =>
               />
             </div>
 
-            <div class="border-t border-[var(--color-border-strong)] bg-[var(--color-surface-muted)] p-3 text-center">
+            <div class="border-t border-(--color-border-strong) bg-[var(--color-surface-muted)] p-3 text-center">
               <button type="button" class="text-xs font-medium text-[var(--color-primary)] hover:underline">
                 Ver Todas las Transacciones
               </button>
@@ -339,14 +339,14 @@ const activityItems = computed(() =>
 
           <div class="grid grid-cols-2 gap-4">
             <article
-              class="flex flex-col items-center justify-center rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-4 text-center shadow-sm"
+              class="flex flex-col items-center justify-center rounded-xl border border-(--color-border) bg-[var(--color-surface)] p-4 text-center shadow-sm"
             >
               <p class="text-3xl font-black">{{ dashboardStore.state.metrics.totalIssued.toLocaleString() }}</p>
               <p class="mt-1 text-xs font-medium uppercase tracking-wide text-[var(--color-text-muted)]">Total Emitidos</p>
             </article>
 
             <article
-              class="flex flex-col items-center justify-center rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-4 text-center shadow-sm"
+              class="flex flex-col items-center justify-center rounded-xl border border-(--color-border) bg-[var(--color-surface)] p-4 text-center shadow-sm"
             >
               <p class="text-3xl font-black text-[var(--color-primary)]">{{ dashboardStore.state.metrics.issuedToday }}</p>
               <p class="mt-1 text-xs font-medium uppercase tracking-wide text-[var(--color-text-muted)]">Emitidos Hoy</p>

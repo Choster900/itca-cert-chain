@@ -44,7 +44,7 @@ const requestHistory: RequestItem[] = [
   <div class="min-h-screen bg-[var(--color-bg)] text-[var(--color-text-main)]">
     <AppTopbar user-name="Carlos Martinez" user-role="Ingenieria en Sistemas" :show-user="true">
       <template #nav>
-        <a class="border-b-2 border-[var(--color-primary)] pb-0.5 text-sm font-bold text-[var(--color-primary)]" href="#">
+        <a class="border-b-2 border-(--color-primary) pb-0.5 text-sm font-bold text-[var(--color-primary)]" href="#">
           Academico
         </a>
         <a class="text-sm font-medium text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-primary)]" href="#">
@@ -71,7 +71,7 @@ const requestHistory: RequestItem[] = [
               <span class="material-symbols-outlined text-[var(--color-text-muted)] group-hover:text-[var(--color-primary)]">dashboard</span>
               Resumen General
             </a>
-            <a class="flex items-center gap-3 rounded-lg border-l-4 border-[var(--color-secondary)] bg-[var(--color-surface)] px-4 py-3 text-sm font-medium text-[var(--color-primary)] shadow-sm" href="#">
+            <a class="flex items-center gap-3 rounded-lg border-l-4 border-(--color-secondary) bg-[var(--color-surface)] px-4 py-3 text-sm font-medium text-[var(--color-primary)] shadow-sm" href="#">
               <span class="material-symbols-outlined text-[var(--color-primary)]">description</span>
               Solicitud de Constancias
             </a>
@@ -85,7 +85,7 @@ const requestHistory: RequestItem[] = [
             </a>
           </nav>
 
-          <div class="mt-8 rounded-xl border border-[var(--color-primary)]/10 bg-[var(--color-primary)]/5 p-5">
+          <div class="mt-8 rounded-xl border border-(--color-primary)/10 bg-[var(--color-primary)]/5 p-5">
             <h3 class="mb-2 flex items-center gap-2 text-sm font-bold text-[var(--color-primary)]">
               <span class="material-symbols-outlined text-lg">help</span>
               Ayuda
@@ -98,7 +98,7 @@ const requestHistory: RequestItem[] = [
         </aside>
 
         <section class="space-y-8 lg:col-span-9">
-          <article class="group relative overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] shadow-sm">
+          <article class="group relative overflow-hidden rounded-xl border border-(--color-border) bg-[var(--color-surface)] shadow-sm">
             <div class="absolute left-0 top-0 h-1 w-full bg-gradient-to-r from-[var(--color-primary)] via-[var(--color-primary)] to-[var(--color-secondary)]" />
 
             <div class="p-6 md:p-8">
@@ -119,7 +119,7 @@ const requestHistory: RequestItem[] = [
                     <div>
                       <label class="mb-2 block text-sm font-semibold">Tipo de Constancia</label>
                       <div class="relative">
-                        <select class="block w-full appearance-none rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] p-3 pr-10 text-sm">
+                        <select class="block w-full appearance-none rounded-lg border border-(--color-border) bg-[var(--color-bg)] p-3 pr-10 text-sm">
                           <option selected disabled>Seleccione una opcion...</option>
                           <option>Constancia de Estudio con Notas</option>
                           <option>Constancia de Egreso</option>
@@ -137,7 +137,7 @@ const requestHistory: RequestItem[] = [
                       <input
                         readonly
                         value="Tecnico en Ingenieria de Sistemas Informaticos"
-                        class="block w-full cursor-not-allowed rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-soft)] p-3 text-sm text-[var(--color-text-muted)]"
+                        class="block w-full cursor-not-allowed rounded-lg border border-(--color-border) bg-[var(--color-bg-soft)] p-3 text-sm text-[var(--color-text-muted)]"
                       />
                     </div>
 
@@ -150,27 +150,27 @@ const requestHistory: RequestItem[] = [
                         <input
                           readonly
                           value="20210458"
-                          class="block w-full cursor-not-allowed rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-soft)] py-3 pl-10 pr-4 text-sm text-[var(--color-text-muted)]"
+                          class="block w-full cursor-not-allowed rounded-lg border border-(--color-border) bg-[var(--color-bg-soft)] py-3 pl-10 pr-4 text-sm text-[var(--color-text-muted)]"
                         />
                       </div>
                     </div>
                   </div>
 
-                  <div class="flex h-full flex-col justify-between rounded-xl border border-dashed border-[var(--color-border)] bg-[var(--color-bg)] p-5">
+                  <div class="flex h-full flex-col justify-between rounded-xl border border-dashed border-(--color-border) bg-[var(--color-bg)] p-5">
                     <div>
-                      <h3 class="mb-4 border-b border-[var(--color-border)] pb-2 text-lg font-bold" style="font-family: var(--font-serif)">Resumen de Solicitud</h3>
+                      <h3 class="mb-4 border-b border-(--color-border) pb-2 text-lg font-bold" style="font-family: var(--font-serif)">Resumen de Solicitud</h3>
 
-                      <div class="flex items-center justify-between border-b border-[var(--color-border)] py-3">
+                      <div class="flex items-center justify-between border-b border-(--color-border) py-3">
                         <span class="text-sm text-[var(--color-text-muted)]">Estado de Solvencia</span>
                         <StatusBadge label="Solvente" tone="success" />
                       </div>
 
-                      <div class="flex items-center justify-between border-b border-[var(--color-border)] py-3">
+                      <div class="flex items-center justify-between border-b border-(--color-border) py-3">
                         <span class="text-sm text-[var(--color-text-muted)]">Costo Referencial</span>
                         <span class="text-sm font-bold">$5.00</span>
                       </div>
 
-                      <div class="border-b border-[var(--color-border)] py-3">
+                      <div class="border-b border-(--color-border) py-3">
                         <span class="mb-1 block text-sm text-[var(--color-text-muted)]">Metodo de Pago</span>
                         <span class="inline-flex items-center gap-1 text-sm font-medium text-[var(--color-primary)]">
                           <span class="material-symbols-outlined text-base">storefront</span>
@@ -178,7 +178,7 @@ const requestHistory: RequestItem[] = [
                         </span>
                       </div>
 
-                      <div class="border-b border-[var(--color-border)] py-3">
+                      <div class="border-b border-(--color-border) py-3">
                         <span class="mb-1 block text-sm text-[var(--color-text-muted)]">Estado de Pago</span>
                         <span class="inline-flex items-center gap-1 text-xs font-semibold text-yellow-700 dark:text-yellow-300">
                           <span class="material-symbols-outlined text-sm">pending</span>
@@ -192,7 +192,7 @@ const requestHistory: RequestItem[] = [
                       </div>
                     </div>
 
-                    <div class="mt-6 border-t border-[var(--color-border)] pt-4">
+                    <div class="mt-6 border-t border-(--color-border) pt-4">
                       <div class="mb-4 rounded-lg border border-yellow-200 bg-yellow-50 p-3 dark:border-yellow-900/40 dark:bg-yellow-900/15">
                         <p class="flex items-start gap-2 text-xs text-yellow-800 dark:text-yellow-200">
                           <span class="material-symbols-outlined mt-0.5 text-sm">info</span>
@@ -211,8 +211,8 @@ const requestHistory: RequestItem[] = [
             </div>
           </article>
 
-          <article class="overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] shadow-sm">
-            <header class="flex items-center justify-between border-b border-[var(--color-border)] p-6">
+          <article class="overflow-hidden rounded-xl border border-(--color-border) bg-[var(--color-surface)] shadow-sm">
+            <header class="flex items-center justify-between border-b border-(--color-border) p-6">
               <h3 class="text-lg font-bold" style="font-family: var(--font-serif)">Estado de Mis Solicitudes</h3>
               <div class="flex gap-2">
                 <button type="button" class="text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-primary)]">
@@ -226,7 +226,7 @@ const requestHistory: RequestItem[] = [
 
             <div class="overflow-x-auto">
               <table class="min-w-full text-left text-sm">
-                <thead class="border-b border-[var(--color-border)] bg-[var(--color-bg)] text-xs uppercase">
+                <thead class="border-b border-(--color-border) bg-[var(--color-bg)] text-xs uppercase">
                   <tr>
                     <th class="px-6 py-4 font-bold tracking-wider text-[var(--color-text-muted)]">Fecha</th>
                     <th class="px-6 py-4 font-bold tracking-wider text-[var(--color-text-muted)]">Tipo de Constancia</th>
@@ -250,7 +250,7 @@ const requestHistory: RequestItem[] = [
                     <td class="px-6 py-4 text-right">
                       <button
                         type="button"
-                        class="rounded border border-[var(--color-primary)]/20 bg-[var(--color-primary)]/5 px-3 py-1.5 text-xs font-medium text-[var(--color-primary)] transition-colors hover:bg-[var(--color-primary)]/10"
+                        class="rounded border border-(--color-primary)/20 bg-[var(--color-primary)]/5 px-3 py-1.5 text-xs font-medium text-[var(--color-primary)] transition-colors hover:bg-[var(--color-primary)]/10"
                       >
                         {{ row.actionLabel }}
                       </button>
@@ -260,7 +260,7 @@ const requestHistory: RequestItem[] = [
               </table>
             </div>
 
-            <footer class="flex justify-center border-t border-[var(--color-border)] bg-[var(--color-bg)] px-6 py-4">
+            <footer class="flex justify-center border-t border-(--color-border) bg-[var(--color-bg)] px-6 py-4">
               <a href="#" class="inline-flex items-center gap-1 text-sm font-medium text-[var(--color-primary)] transition-colors hover:text-[var(--color-primary-hover)]">
                 Ver todo el historial
                 <span class="material-symbols-outlined text-sm">arrow_forward</span>
@@ -271,7 +271,7 @@ const requestHistory: RequestItem[] = [
       </div>
     </main>
 
-    <footer class="mt-auto border-t border-[var(--color-border)] bg-[var(--color-surface)] py-8">
+    <footer class="mt-auto border-t border-(--color-border) bg-[var(--color-surface)] py-8">
       <div class="mx-auto flex w-full max-w-[1280px] flex-col items-center justify-between gap-4 px-4 text-sm text-[var(--color-text-muted)] md:flex-row md:px-6">
         <p>© 2026 ITCA-FEPADE. Todos los derechos reservados.</p>
         <div class="flex gap-6">

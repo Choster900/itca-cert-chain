@@ -42,9 +42,9 @@ const recordId = route.params.recordId as string | undefined
       </section>
 
       <section class="space-y-6 lg:col-span-7">
-        <div class="group relative overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-1 shadow-sm">
+        <div class="group relative overflow-hidden rounded-xl border border-(--color-border) bg-[var(--color-surface)] p-1 shadow-sm">
           <article class="mx-auto max-w-2xl rounded-lg bg-[var(--color-surface)] p-6 md:p-8">
-            <header class="mb-8 flex items-center justify-between border-b border-[var(--color-border)] pb-6">
+            <header class="mb-8 flex items-center justify-between border-b border-(--color-border) pb-6">
               <div class="flex items-center gap-3">
                 <div class="flex h-12 w-12 items-center justify-center rounded bg-[var(--color-primary)] text-white">
                   <span class="material-symbols-outlined text-3xl">school</span>
@@ -66,7 +66,7 @@ const recordId = route.params.recordId as string | undefined
             </p>
 
             <div class="mb-4 py-2 text-center">
-              <h3 class="inline-block border-b-2 border-[var(--color-border)] px-8 pb-2 text-2xl font-bold uppercase md:text-3xl">
+              <h3 class="inline-block border-b-2 border-(--color-border) px-8 pb-2 text-2xl font-bold uppercase md:text-3xl">
                 Alexandria J. Morgan
               </h3>
             </div>
@@ -120,25 +120,25 @@ const recordId = route.params.recordId as string | undefined
             <h2 class="text-xl font-bold">Estado de Verificacion</h2>
           </div>
 
-          <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-[var(--color-primary)]/20 bg-[var(--color-primary)]/10 px-3 py-1 text-[var(--color-primary)]">
+          <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-(--color-primary)/20 bg-[var(--color-primary)]/10 px-3 py-1 text-[var(--color-primary)]">
             <span class="h-2 w-2 animate-pulse rounded-full bg-[var(--color-primary)]" />
             <span class="text-sm font-bold">Verificado en Blockchain</span>
           </div>
 
-          <div class="space-y-4 border-t border-[var(--color-border)] pt-4">
+          <div class="space-y-4 border-t border-(--color-border) pt-4">
             <div>
               <p class="mb-1 text-sm font-medium text-[var(--color-text-muted)]">Red</p>
               <p class="font-mono text-sm font-bold text-[var(--color-secondary)]">Ethereum Sepolia</p>
             </div>
             <div>
               <p class="mb-1 text-sm font-medium text-[var(--color-text-muted)]">Direccion del Smart Contract</p>
-              <code class="block rounded border border-[var(--color-border)] bg-[var(--color-bg)] p-2 font-mono text-xs text-[var(--color-primary)]">
+              <code class="block rounded border border-(--color-border) bg-[var(--color-bg)] p-2 font-mono text-xs text-[var(--color-primary)]">
                 0x123...456abc
               </code>
             </div>
             <div>
               <p class="mb-1 text-sm font-medium text-[var(--color-text-muted)]">Hash de Transaccion</p>
-              <code class="block rounded border border-[var(--color-border)] bg-[var(--color-bg)] p-2 font-mono text-xs text-[var(--color-primary)]">
+              <code class="block rounded border border-(--color-border) bg-[var(--color-bg)] p-2 font-mono text-xs text-[var(--color-primary)]">
                 0x7f9a3...3a2b9c8d
               </code>
             </div>
@@ -147,11 +147,11 @@ const recordId = route.params.recordId as string | undefined
 
         <AppCard title="Verificacion de Integridad" icon="gavel">
           <div class="space-y-4">
-            <div class="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] p-3">
+            <div class="rounded-lg border border-(--color-border) bg-[var(--color-bg)] p-3">
               <p class="mb-1 text-xs font-bold uppercase text-[var(--color-text-muted)]">Hash calculado del documento</p>
               <code class="font-mono text-xs">8a7d...9e2f</code>
             </div>
-            <div class="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] p-3">
+            <div class="rounded-lg border border-(--color-border) bg-[var(--color-bg)] p-3">
               <p class="mb-1 text-xs font-bold uppercase text-[var(--color-text-muted)]">Hash registrado en blockchain</p>
               <code class="font-mono text-xs">8a7d...9e2f</code>
             </div>

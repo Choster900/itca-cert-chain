@@ -20,7 +20,7 @@ const variantClasses: Record<ButtonVariant, string> = {
   primary:
     'bg-[var(--color-primary)] text-[var(--color-text-inverse)] hover:bg-[var(--color-primary-hover)] shadow-[0_10px_24px_-14px_var(--color-primary)]',
   secondary:
-    'border border-[var(--color-border)] bg-[var(--color-surface)] text-[var(--color-text-main)] hover:bg-[var(--color-bg-soft)]',
+    'border border-(--color-border) bg-[var(--color-surface)] text-[var(--color-text-main)] hover:bg-[var(--color-bg-soft)]',
   ghost: 'text-[var(--color-text-main)] hover:bg-[var(--color-bg-soft)]',
 }
 

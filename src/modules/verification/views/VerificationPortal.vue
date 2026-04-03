@@ -72,7 +72,7 @@ const latestRecords: CertifiedRecord[] = [
     </AppTopbar>
 
     <main class="flex-1">
-      <section class="border-b border-[var(--color-border)] bg-[var(--color-surface-muted)] py-12 lg:py-16">
+      <section class="border-b border-(--color-border) bg-[var(--color-surface-muted)] py-12 lg:py-16">
         <div class="mx-auto w-full max-w-[1100px] px-4 md:px-6">
           <div class="mb-10 text-center">
             <h1 class="mb-4 text-3xl font-bold leading-tight md:text-4xl lg:text-5xl" style="font-family: var(--font-serif)">
@@ -83,9 +83,9 @@ const latestRecords: CertifiedRecord[] = [
             </p>
           </div>
 
-          <div class="overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] shadow-xl">
-            <div class="flex gap-1 border-b border-[var(--color-border)] bg-[var(--color-bg-soft)] p-1">
-              <button type="button" class="flex-1 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] px-3 py-3 text-sm font-bold text-[var(--color-primary)]">
+          <div class="overflow-hidden rounded-xl border border-(--color-border) bg-[var(--color-surface)] shadow-xl">
+            <div class="flex gap-1 border-b border-(--color-border) bg-[var(--color-bg-soft)] p-1">
+              <button type="button" class="flex-1 rounded-md border border-(--color-border) bg-[var(--color-surface)] px-3 py-3 text-sm font-bold text-[var(--color-primary)]">
                 Busqueda por Codigo
               </button>
               <button type="button" class="flex-1 rounded-md px-3 py-3 text-sm font-medium text-[var(--color-text-muted)] transition-colors hover:bg-[var(--color-surface)]">
@@ -96,12 +96,12 @@ const latestRecords: CertifiedRecord[] = [
             <div class="grid gap-8 p-6 md:grid-cols-2 md:p-8">
               <div class="space-y-6">
                 <IconField label="Codigo de Constancia" icon="qr_code">
-                  <input type="text" value="ITCA-2024-X8J9-LM2P" class="h-12 w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] py-3 pl-10 pr-4 text-sm" />
+                  <input type="text" value="ITCA-2024-X8J9-LM2P" class="h-12 w-full rounded-lg border border-(--color-border) bg-[var(--color-bg)] py-3 pl-10 pr-4 text-sm" />
                 </IconField>
 
                 <div>
                   <p class="mb-2 text-sm font-semibold">Subir Documento (PDF)</p>
-                  <div class="group cursor-pointer rounded-lg border-2 border-dashed border-[var(--color-border)] p-6 text-center transition-colors hover:bg-[var(--color-bg-soft)]">
+                  <div class="group cursor-pointer rounded-lg border-2 border-dashed border-(--color-border) p-6 text-center transition-colors hover:bg-[var(--color-bg-soft)]">
                     <span class="material-symbols-outlined mb-2 text-4xl text-[var(--color-text-muted)] transition-colors group-hover:text-[var(--color-primary)]">upload_file</span>
                     <p class="text-sm font-medium">Arrastre su archivo aqui o haga clic para examinar</p>
                     <p class="mt-1 text-xs text-[var(--color-text-muted)]">Solo formato PDF (Max 10MB)</p>
@@ -118,14 +118,14 @@ const latestRecords: CertifiedRecord[] = [
                 <div class="space-y-4">
                   <div>
                     <p class="mb-1 text-xs font-semibold uppercase tracking-wider text-[var(--color-text-muted)]">Hash Calculado del Documento</p>
-                    <div class="break-all rounded border border-[var(--color-border)] bg-[var(--color-bg)] p-2 font-mono text-xs text-[var(--color-text-muted)]">
+                    <div class="break-all rounded border border-(--color-border) bg-[var(--color-bg)] p-2 font-mono text-xs text-[var(--color-text-muted)]">
                       e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
                     </div>
                   </div>
 
                   <div>
                     <p class="mb-1 text-xs font-semibold uppercase tracking-wider text-[var(--color-text-muted)]">Hash en Blockchain (Ethereum)</p>
-                    <div class="break-all rounded border border-[var(--color-border)] bg-[var(--color-bg)] p-2 font-mono text-xs text-[var(--color-text-muted)]">
+                    <div class="break-all rounded border border-(--color-border) bg-[var(--color-bg)] p-2 font-mono text-xs text-[var(--color-text-muted)]">
                       e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
                     </div>
                   </div>
@@ -142,10 +142,10 @@ const latestRecords: CertifiedRecord[] = [
             </div>
           </div>
 
-          <div class="mt-8 overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] shadow-sm">
+          <div class="mt-8 overflow-hidden rounded-xl border border-(--color-border) bg-[var(--color-surface)] shadow-sm">
             <div class="overflow-x-auto">
               <table class="min-w-full text-left text-sm">
-                <thead class="border-b border-[var(--color-border)] bg-[var(--color-bg)]">
+                <thead class="border-b border-(--color-border) bg-[var(--color-bg)]">
                   <tr>
                     <th class="px-6 py-4 text-xs font-bold uppercase tracking-wider text-[var(--color-text-muted)]">Hash</th>
                     <th class="px-6 py-4 text-xs font-bold uppercase tracking-wider text-[var(--color-text-muted)]">ID Estudiante</th>
